@@ -1,4 +1,4 @@
-# Bash-Script-Login-CRUD
+# Bash Script Login CRUD
 Simple  bash script Login and CRUD With Mysql
 ##### main.sh - Login
 ##### curd.sh - CRUD(CREATE, READ, UPDATE, DELETE)
