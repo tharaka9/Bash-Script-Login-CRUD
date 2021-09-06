@@ -1,5 +1,4 @@
 #!/bin/bash
-php -f /var/practic/crud/db.php
 
 echo "This data getting from db.php ^^"
 echo $row
