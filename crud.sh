@@ -16,7 +16,7 @@ read n
 
 case $n in
 1)
-mysql -h localhost -u root -prrass98 -e "use bash_crud; select * from employee"
+mysql -h localhost -u root -ptest2 -e "use bash_crud; select * from employee"
 ;;
 2)
 #add data to database
@@ -27,7 +27,7 @@ read lname
 echo "Enter Phone Number: "
 read phone
 
-mysql -h localhost -u root -prrass98 -e "use bash_crud; INSERT INTO employee (fname, lname, phone) VALUES ('$fname', '$lname', $phone)
+mysql -h localhost -u root -ptest2 -e "use bash_crud; INSERT INTO employee (fname, lname, phone) VALUES ('$fname', '$lname', $phone)
 "
 echo "Data Inserted Successfully"
 ;;
@@ -35,7 +35,7 @@ echo "Data Inserted Successfully"
 #update data
 echo "All Employee Data......"
 
-mysql -h localhost -u root -prrass98 -e "use bash_crud; select * from employee"
+mysql -h localhost -u root -ptest2 -e "use bash_crud; select * from employee"
 
 echo "Select Id Number To Update Data: " 
 read id
@@ -48,19 +48,19 @@ read lname
 echo "Enter Phone Number: "
 read phone
 
-mysql -h localhost -u root -prrass98 -e "use bash_crud; update employee set fname = '$fname', lname = '$lname', phone = $phone where id = $id"
+mysql -h localhost -u root -ptest2 -e "use bash_crud; update employee set fname = '$fname', lname = '$lname', phone = $phone where id = $id"
 
 echo "Data Update Successfully"
 ;;
 4)
 echo "All Employee Data......"
 
-mysql -h localhost -u root -prrass98 -e "use bash_crud; select * from employee"
+mysql -h localhost -u root -ptest2 -e "use bash_crud; select * from employee"
 
 echo "Select Id Number To Delete Data: "
 read id
 
-mysql -h localhost -u root -prrass98 -e "use bash_crud; delete from employee where id = $id;"
+mysql -h localhost -u root -ptest2 -e "use bash_crud; delete from employee where id = $id;"
 
 echo "Data Delete Successfully"
 ;;
